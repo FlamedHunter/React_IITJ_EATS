@@ -1,0 +1,50 @@
+.footercontainer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.footernothing{
+    visibility: hidden;
+}
+.footercontainer a{
+    text-decoration: none;
+    color: grey;
+    height: 24px;
+    width: 24px;
+}
+
+.footercontainer a:active{
+    color: var(--theme--color1);
+}
+
+.footercontainer a:hover{
+    color: var(--theme--color1);
+}
+
+.footercartbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    top: -25px;
+    background-color: var(--theme--color3);
+}
+.footercartbox a{
+    height: 24px;
+    width: 24px;
+    color: var(--theme--color2);
+}
+.footercartbox a:active{
+    color: var(--theme--color1);
+}
+
+.footercartbox a:hover{
+    color: var(--theme--color1);
+}

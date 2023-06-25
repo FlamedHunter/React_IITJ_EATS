@@ -1,25 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Footer from './assets/footer/Footer';
+import SplashPage from './assets/splashpage/SplashPage';
+import Registration from './components/registration/Registration';
+import Signup from './components/signup_signin/Signup';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello guys welcome!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <SplashPage/> */}
+      {/* <Signup/> */}
+      <Registration/>
+      {/* <Footer/> */}
+    </>
   );
 }
-
 export default App;
