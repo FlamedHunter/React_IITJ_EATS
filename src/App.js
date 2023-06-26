@@ -8,8 +8,8 @@ function App() {
   return (
     <>
       {/* <SplashPage /> */}
-      <Signup />
-      {/* <Registration/> */}
+      {/* <Signup /> */}
+      <Registration/>
       {/* <Footer/> */}
     </>
   );
