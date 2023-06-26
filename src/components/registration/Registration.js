@@ -9,7 +9,7 @@ const Registration = () => {
 
                 <div className='registrationbox'>
 
-                    <h2>Regitration</h2>
+                    <h2>Registration</h2>
 
                     <span className='registrationheadingspan'>Enter your details to create account</span>
 

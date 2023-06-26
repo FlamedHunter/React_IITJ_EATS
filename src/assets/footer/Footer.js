@@ -3,7 +3,7 @@ import './footer.css'
 
 const Footer = () => {
   return (
-    <>
+    <div className='footerfixed'>
         <div className='footercontainer'>
             <a href="/">
                 <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
@@ -34,7 +34,7 @@ const Footer = () => {
                 </svg>
             </a>
         </div>
-    </>
+    </div>
   )
 }
 
