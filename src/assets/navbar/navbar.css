@@ -116,10 +116,6 @@
     margin-right: 20px;
 }
 
-.sidenavbaritemsicon{
-    width: 24px;
-    height: 24px;
-}
 .sidenavbaritemsiconname{
     color: var(--theme--color3);
     font-size: 18px;
@@ -146,8 +142,4 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.sidebarlogoutbuttonicon{
-    width: 24px;
-    height: 24px;
 }
