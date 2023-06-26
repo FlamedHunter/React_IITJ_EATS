@@ -17,18 +17,20 @@ const Signup = () => {
           <div className="signinwithtext">
             <span>Signin With</span>
           </div>
-          <GoogleOAuthProvider clientId="503531894137-qn0rmeumsi509sqm848oaddd5ikgq5l6.apps.googleusercontent.com">
-            <GoogleLogin
-              onSuccess={(credentialResponse) => {
-                console.log(credentialResponse);
-              }}
-              onError={() => {
-                console.log("Login Failed");
-              }}
-              useOneTap
-            />
-          </GoogleOAuthProvider>
-          ;
+          <div className='signinbutton1'>
+              <GoogleOAuthProvider   clientId="503531894137-qn0rmeumsi509sqm848oaddd5ikgq5l6.apps.googleusercontent.com">
+                <GoogleLogin
+                  onSuccess={(credentialResponse) => {
+                    console.log(credentialResponse);
+                  }}
+                  onError={() => {
+                    console.log("Login Failed");
+                  }}
+                  useOneTap
+                />
+              </GoogleOAuthProvider>
+              ;
+          </div>
         </div>
       </div>
     </>
