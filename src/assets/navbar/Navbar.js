@@ -31,6 +31,10 @@ const Navbar = () => {
                     </svg>
                 </button>
             </div>
+            
+            <span className='navbartopname'>
+                IITJ EATs
+            </span>
 
             <a href="/" className='navbartopprofile'>
                 <img src="https://drive.google.com/u/0/uc?id=1AX2XhkhJ6ine9H0vDBrox7zRamLh-P_s&export=download" alt="Name" className='navbartopprofileimg'/>
