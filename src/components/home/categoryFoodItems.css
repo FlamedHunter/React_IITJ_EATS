@@ -1,7 +1,6 @@
 .categoryfooditemscontainer{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 10px;
 }
 
 
@@ -14,32 +13,33 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    height: 250px;
+    height: 270px;
     width: 50vw;
 }
 .categoryfooditemboxbox{
+    z-index: 0;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-decoration: none;
-    height: 250px;
-    width: 160px ;
+    height: 270px;
+    width: min(max(160px,44vw),200px);
 }
 
 .categoryfooditemboxtop{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
-    width: 150px;
+    height: min(max(160px,44vw),200px);
+    width: min(max(160px,44vw),200px);
     border-radius: 20px;
     object-fit: cover;
 }
 
 .categoryfooditemboxtopimg{
-    height: 150px;
-    width: 150px;
+    height: min(max(160px,44vw),200px);
+    width: min(max(160px,44vw),200px);
     border-radius: 20px;
 }
 
@@ -75,4 +75,58 @@
 .categoryratingpeeps{
     color: var(--theme--color5);
     font-size: 10px;
+}
+
+.categoryfooddiscp{
+    padding-top: 8px;
+}
+
+.categoryfoodtitle{
+    font-size: 16px;
+    color: var(--theme--color3);
+}
+.categoryfoodrestaurant{
+    font-size: 14px;
+    color: var(--theme--color5);
+}
+
+
+
+
+
+
+.categoryfoodpricebox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25px;
+    left: 5px;
+    background-color: var(--theme--color2);
+    width: 55px;
+    height: 25px;
+    border-radius: 10px;
+    font-size: 13px;
+    color: var(--theme--color3);
+}
+
+.categoryfoodlikebutton{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 25px;
+    right: 8px;
+    background-color: var(--theme--color1);
+    color: var(--theme--color2);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: none;
+    z-index: 2;
+}
+.categoryfoodlikebutton:hover{
+    background-color: var(--theme--color2);
+    color: var(--theme--color1);
+    cursor: pointer;
 }

@@ -11,6 +11,17 @@ const CategoryFoodItems = () => {
         return (
             <div className='categoryfooditembox'>
                 <a href='/' key={category.id} className='categoryfooditemboxbox' >
+
+                    <div className='categoryfoodpricebox'>
+                        Rs. {category.price}
+                    </div>
+
+                    <button className='categoryfoodlikebutton'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                        </svg>
+                    </button>
+
                     <div className='categoryfooditemboxtop'>
                         <img className="categoryfooditemboxtopimg" src={category.img} alt="" />
                     </div>
@@ -26,9 +37,9 @@ const CategoryFoodItems = () => {
                                 25+
                             </span>
                         </div>
-                        <div>
-                            <h5>{category.name}</h5>
-                            <span>Rs. {category.price}</span>
+                        <div className='categoryfooddiscp'>
+                            <h5 className='categoryfoodtitle'>{category.name}</h5>
+                            <span className='categoryfoodrestaurant'>{category.restaurant}</span>
                         </div>
                         
                     </div>

@@ -20,7 +20,8 @@ const Home = () => {
               <SelectCategory/>
             </div>
 
-            <div>
+            <div className='homepopularitems'>
+                <h2 className='homepopularitemsheading'>Popular Items</h2>
                 <CategoryFoodItems/>
             </div>
 

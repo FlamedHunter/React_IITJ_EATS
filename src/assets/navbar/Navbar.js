@@ -9,6 +9,7 @@ function closenavbar(event) {
         document.getElementById("sidenavbar").style.visibility = "hidden";
         document.getElementById("sidenavbar").style.width = "0";
         document.getElementById("topnavbar").style.height = "60px";
+        document.getElementById("topnavbar").style.visibility = "visible";
     }
   }
 
@@ -18,6 +19,7 @@ const Navbar = () => {
         document.getElementById("sidenavbar").style.width = "100%";
         document.getElementById("sidenavbar").style.visibility = "visible";
         document.getElementById("topnavbar").style.height = "0px";
+        document.getElementById("topnavbar").style.visibility = "hidden";
     }
 
 
