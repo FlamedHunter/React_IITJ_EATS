@@ -21,7 +21,7 @@ const allfooditems = [
         img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-DEl_VpAZzJ2sLHUgAERGMznVhhT85eGwiw&usqp=CAU',
         price:'50',
         categories:['pizza','fast food'],
-        restaurant:'Canteen'
+        restaurant:'Shamiyana'
     }
 ]
 
@@ -54,8 +54,13 @@ const categoriesSlice = createSlice({
 })
 
 export const getcategoryItems = (state) => {
-    return state.categories.items;
+    return state.categories.items.slice(0,10);
 } 
+export const getUniqueRestaurants = (state) => {
+    const categoryItems = state.categories.items;
+    const uniqueRestaurants = [...new Set(categoryItems.map(item => item.restaurant))];
+    return uniqueRestaurants;
+}
 
 export const {updateCategory} = categoriesSlice.actions
 

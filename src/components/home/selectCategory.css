@@ -1,6 +1,6 @@
 .selectcategorybutton{
-    height: 100px;
-    width: 60px;
+    height: 113px;
+    width: 65px;
     margin-bottom: 20px;
     margin-top: 10px;
     border: none;
@@ -10,7 +10,7 @@
     margin-left: 12px;
     color: var(--theme--color3);
     z-index: 1;
-    box-shadow: 0px 0px 15px rgba(128, 128, 128, 0.200);
+    box-shadow: 0px 0px 15px rgba(128, 128, 128, 0.289);
     transition: all 0.3s ease;
     
 }

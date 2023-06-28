@@ -57,13 +57,30 @@
       
 
 .homecatergoryselectbox{
-    padding-left: 10px;
+    
 }
 
 .homepopularitems{
     margin-top: 10px;
 }
+
+.homefeaturedrestaurantsbox{
+    margin-top: 10px;
+}
 .homepopularitemsheading{
-    font-size: 26px;
+    font-size: 24px;
     margin-left: 15px;
+    font-weight: 500;
+}
+
+.homefeaturedrestaurantsheading{
+    font-size: 24px;
+    margin-left: 15px;
+    font-weight: 500;
+}
+
+.homefeaturedrestaurantscontainer{
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: 0;
 }

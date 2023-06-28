@@ -17,6 +17,17 @@
 .footernothing{
     visibility: hidden;
 }
+
+.footerbuttons{
+    border: none;
+    background: transparent;
+    color: var(--theme--color5);
+    height: 24px;
+    width: 24px;
+}
+.footerbuttons:active,.footerbuttons:hover{
+    color: var(--theme--color1);
+}
 .footercontainer a{
     text-decoration: none;
     color: var(--theme--color5);
@@ -43,15 +54,13 @@
     top: -25px;
     background-color: var(--theme--color3);
 }
-.footercartbox a{
+.footercartbutton{
+    background: transparent;
+    border: none;
     height: 24px;
     width: 24px;
     color: var(--theme--color2);
 }
-.footercartbox a:active{
-    color: var(--theme--color1);
-}
-
-.footercartbox a:hover{
+.footercartbutton:active,.footercartbutton:hover{
     color: var(--theme--color1);
 }

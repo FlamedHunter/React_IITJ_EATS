@@ -2,6 +2,7 @@ import React from 'react'
 import './home.css'
 import SelectCategory from './SelectCategory'
 import CategoryFoodItems from './CategoryFoodItems'
+import FeaturedRestaurants from './FeaturedRestaurants'
 
 
 const Home = () => {
@@ -18,6 +19,14 @@ const Home = () => {
 
             <div className='homecatergoryselectbox'>
               <SelectCategory/>
+            </div>
+
+            <div className='homefeaturedrestaurantsbox'>
+              <h2 className='homefeaturedrestaurantsheading'>Featured Restaurants</h2>
+              <div className='homefeaturedrestaurantscontainer'>
+                <FeaturedRestaurants/>
+              </div>
+              
             </div>
 
             <div className='homepopularitems'>
