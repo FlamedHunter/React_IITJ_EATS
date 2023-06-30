@@ -130,3 +130,15 @@
 .profilesavebutton:hover{
     transform: scale(1.1);
 }
+
+
+.profilebackbutton{
+    height: 30px;
+    width: 30px;
+    text-decoration: none;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: var(--theme--color3);
+    z-index: 3;
+}

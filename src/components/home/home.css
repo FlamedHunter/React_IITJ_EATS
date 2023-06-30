@@ -1,5 +1,6 @@
 .homemaincontainer{
     margin-top: 10px;
+    margin-bottom: 50px;
 }
 
 .homeheadingandsearch{
@@ -83,4 +84,35 @@
     overflow-x: auto;
     white-space: nowrap;
     scrollbar-width: 0;
+}
+
+
+.homefooter{
+    height: 300px;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-bottom: 50px;
+    background-color: rgba(128, 128, 128, 0.178);
+}
+.homefooter h1{
+    color: var(--theme--color5);
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.homefooter span{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 18px;
+    color: var(--theme--color5);
+}
+.homefootertext{
+    padding-right: 5px;
+    font-size: 18px;
+}
+.homefootertext2{
+    padding-left: 5px;
+    font-size: 18px;
 }
