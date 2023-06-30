@@ -1,22 +1,16 @@
 import "./App.css";
-import Footer from "./assets/footer/Footer";
-import Navbar from "./assets/navbar/Navbar";
-import SplashPage from "./assets/splashpage/SplashPage";
-import Home from "./components/home/Home";
-import Passwordreset from "./components/passwordreset/Passwordreset";
-import Registration from "./components/registration/Registration";
-import Signup from "./components/signup_signin/Signup";
+import Profile from "./components/profile/Profile";
+import HomePage from "./pages/HomePage";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <>
-      {/* <SplashPage /> */}
-      {/* <Signup /> */}
-      {/* <Registration/> */}
-      <Navbar/>
-      <Home/>
-      <Footer/>
-    </>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<HomePage/>} />
+        <Route exact path="/profile" element={<Profile/>} />
+      </Routes>
+    </Router>
   );
 }
 export default App;

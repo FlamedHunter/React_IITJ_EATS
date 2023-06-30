@@ -131,3 +131,10 @@
     font-size: 11px;
     color: var(--theme--color5);
 }
+
+.featuredrestaurantspanpan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}

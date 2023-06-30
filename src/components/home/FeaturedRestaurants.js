@@ -35,7 +35,7 @@ const FeaturedRestaurants = () => {
             <a href='/' className='featuredrestaurantbox'>
                 
                 <div className='featuredrestaurantratings'>
-                    <span>
+                    <span className='featuredrestaurantspanpan'>
                         <span className='featuredrestaurantratingsrate'>
                             4.5
                         </span>

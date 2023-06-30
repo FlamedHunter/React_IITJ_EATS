@@ -1,15 +1,20 @@
 import React from 'react'
 import './navbar.css'
+import { useSelector } from 'react-redux';
+
+function navbarclose(){
+    document.getElementById("sidenavbar").style.visibility = "hidden";
+    document.getElementById("sidenavbar").style.width = "0";
+    document.getElementById("topnavbar").style.height = "60px";
+    document.getElementById("topnavbar").style.visibility = "visible";
+}
 
 function closenavbar(event) {
     const windowWidth = window.innerWidth;
     const clickX = event.clientX;
   
     if (clickX > windowWidth / 2) {
-        document.getElementById("sidenavbar").style.visibility = "hidden";
-        document.getElementById("sidenavbar").style.width = "0";
-        document.getElementById("topnavbar").style.height = "60px";
-        document.getElementById("topnavbar").style.visibility = "visible";
+        navbarclose()
     }
   }
 
@@ -22,6 +27,13 @@ const Navbar = () => {
         document.getElementById("topnavbar").style.visibility = "hidden";
     }
 
+    const username = useSelector((state)=>state.profile.name).split(' ')[0]
+    var img = useSelector(state=>state.profile.img)
+    const useremail = useSelector(state=>state.profile.email)
+
+    if(!img){
+        img = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png'
+    }
 
   return (
     <>
@@ -38,20 +50,26 @@ const Navbar = () => {
                 IITJ EATs
             </span>
 
-            <a href="/" className='navbartopprofile'>
-                <img src="https://drive.google.com/u/0/uc?id=1AX2XhkhJ6ine9H0vDBrox7zRamLh-P_s&export=download" alt="Name" className='navbartopprofileimg'/>
+            <a href="/profile" className='navbartopprofile'>
+                <img src={img} alt="Name" className='navbartopprofileimg'/>
             </a>
         </div>
 
 
         <div onClick={closenavbar} className='sidenavbar' id='sidenavbar'>
+            <button className='sidenavnarclosebutton' onClick={()=>navbarclose()}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                    <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+                </svg>
+            </button>
+
             <div className='sidenavbarcontainer'>
                 <div className='sidenavbarprofile'>
                     <div className='sidenavbaravatar'>
-                        <img src="https://drive.google.com/u/0/uc?id=1AX2XhkhJ6ine9H0vDBrox7zRamLh-P_s&export=download" alt="Name" className='sidenavbarimg'/>
+                        <img src={img} alt="Name" className='sidenavbarimg'/>
                     </div>
-                    <span className='sidenavbarprofilename'> Arman </span>
-                    <span className='sidenavbarprofileemail'> garg.25@iitj.ac.in</span>
+                    <span className='sidenavbarprofilename'>{username}</span>
+                    <span className='sidenavbarprofileemail'>{useremail}</span>
                 </div>
                 
                 <ul>
@@ -70,7 +88,7 @@ const Navbar = () => {
 
 
                     <li>
-                        <a href="/" className='sidenavbaritems'>
+                        <a href="/profile" className='sidenavbaritems'>
                             <div className='sidenavbaritemsiconbox'>
                                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
                                     <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
