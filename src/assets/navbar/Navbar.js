@@ -58,9 +58,7 @@ const Navbar = () => {
 
         <div onClick={closenavbar} className='sidenavbar' id='sidenavbar'>
             <button className='sidenavnarclosebutton' onClick={()=>navbarclose()}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
-                    <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
-                </svg>
+                <img className='profilebackbuttonimg' src="https://cdn.icon-icons.com/icons2/1674/PNG/512/arrowiosback_111116.png" alt="" />
             </button>
 
             <div className='sidenavbarcontainer'>
@@ -102,7 +100,7 @@ const Navbar = () => {
                     
 
                     <li>
-                        <a href="/" className='sidenavbaritems'>
+                        <a href="/deliveryaddress" className='sidenavbaritems'>
                             <div className='sidenavbaritemsiconbox'>
                                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                                     <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
